@@ -1,13 +1,16 @@
 import Appbar from "./Appbar";
 import { Avatar } from "./BlogCard";
-interface Blog {
-  content: string;
-  title: string;
-  author: {
-    name: string;
-  };
+
+interface Blog{
+  content:string,
+  title:string,
+  author:{
+    name:string
+  }
 }
-function FullBlog({ blog }: { blog: Blog }) {
+
+
+function FullBlog({ blog }:{blog:Blog}) {
   return (
     <div>
       <Appbar />

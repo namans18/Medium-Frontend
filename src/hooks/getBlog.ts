@@ -12,7 +12,7 @@ interface Blog {
 }
 function useBlog({ id }: { id: string }) {
   const [loading, setLoading] = useState(true);
-  const [blog, setBlog] = useState<Blog[]>([]);
+  const [blog, setBlog] = useState<Blog>();
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios

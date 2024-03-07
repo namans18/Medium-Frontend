@@ -19,7 +19,7 @@ function BlogId(){
         <Skeleton/>
       </div>
     }
-    return <div> 
+    return <div>    
         <FullBlog blog={blog}/>
         <Footer/>
     </div>
