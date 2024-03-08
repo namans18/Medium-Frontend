@@ -17,7 +17,7 @@ function Appbar() {
             New
           </button>
         </Link>
-        <Avatar size="big" name="Rohit"></Avatar>
+        <Avatar size="big" name="Rohit" ></Avatar>
       </div>
     </div>
   );

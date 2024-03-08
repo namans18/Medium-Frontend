@@ -2,6 +2,7 @@ import Appbar from "./Appbar";
 import { Avatar } from "./BlogCard";
 
 interface Blog{
+  id:string,
   content:string,
   title:string,
   author:{

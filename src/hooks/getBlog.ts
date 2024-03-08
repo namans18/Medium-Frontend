@@ -10,7 +10,11 @@ interface Blog {
     name: string;
   };
 }
-function useBlog({ id }: { id: string }) {
+interface UseBlogReturnType {
+  loading: boolean;
+  blog?: Blog; // blog can be undefined initially
+}
+function useBlog({ id }: { id: string }):UseBlogReturnType {
   const [loading, setLoading] = useState(true);
   const [blog, setBlog] = useState<Blog>();
   useEffect(() => {
@@ -22,7 +26,7 @@ function useBlog({ id }: { id: string }) {
         },
       })
       .then((response) => {
-        setBlog(response.data.blog);
+        setBlog(response.data.blog as Blog);
         setLoading(false);
       });
   }, [id]);

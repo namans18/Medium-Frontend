@@ -19,10 +19,10 @@ function BlogId(){
         <Skeleton/>
       </div>
     }
-    return <div>    
+    return blog? (<div>    
         <FullBlog blog={blog}/>
         <Footer/>
-    </div>
+    </div>):null;
 }
 
 export default BlogId;
