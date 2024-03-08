@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 fixed bottom-0 left-0 w-full z-50">
-      <div className="container mx-auto px-2 py-1 md:py-2"> 
+      <div className="container mx-auto px-2 py-1  md:py-2"> 
         <div className="flex flex-col md:flex-row justify-between">
           <div className="md:w-1/3 mb-2 md:mb-0"> 
             <h2 className="text-lg font-semibold mb-1">About Us</h2> 
