@@ -10,17 +10,16 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route></Route>
-          <Route></Route>
-          <Route path="/Blog" element={<Blog />}></Route>
-          <Route path="/" element={<Signup />}></Route>
-          <Route path="/signin" element={<Signin />}></Route>
-          <Route path="/:id" element={<BlogId/>}/>
-          <Route path="/publish" element={<Publish/>} />
+          <Route path="/" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/publish" element={<Publish />} />
+          <Route path="/blog/:id" element={<BlogId />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </>
   );
 }
+
 
 export default App;
