@@ -4,8 +4,20 @@ import Signup from "./pages/signup";
 import Signin from "./pages/signin";
 import BlogId from "./pages/BlogId";
 import Publish from "./pages/Publish";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const clearLocalStorage = () => {
+      localStorage.clear();
+    };
+
+    window.addEventListener('beforeunload', clearLocalStorage);
+
+    return () => {
+      window.removeEventListener('beforeunload', clearLocalStorage);
+    };
+  }, []);
   return (
     <>
       <BrowserRouter>
