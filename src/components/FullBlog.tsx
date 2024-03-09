@@ -1,15 +1,14 @@
 import Appbar from "./Appbar";
 import { Avatar } from "./BlogCard";
 
-interface Blog{
-  id:string,
-  content:string,
-  title:string,
-  author:{
-    name:string
-  }
+interface Blog {
+  id: string;
+  content: string;
+  title: string;
+  author: {
+    name: string;
+  };
 }
-
 
 function FullBlog({ blog }: { blog: Blog }) {
   return (
@@ -20,7 +19,10 @@ function FullBlog({ blog }: { blog: Blog }) {
           <div className="md:col-span-8">
             <div className="text-3xl md:text-5xl font-extrabold">{blog.title}</div>
             <div className="text-slate-500 pt-2">Post on 2nd December 2024</div>
-            <div className="pt-4">{blog.content}</div>
+            <div className="pt-4">
+              {/* Render content using <pre> element */}
+              <pre>{blog.content}</pre>
+            </div>
           </div>
           <div className="md:col-span-4 mt-8 md:mt-0">
             <div className="text-slate-600 text-lg">Author</div>
