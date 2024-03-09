@@ -24,7 +24,6 @@ function BlogId() {
   return blog ? (
     <div>
       <FullBlog blog={blog} />
-      <Footer />
     </div>
   ) : null;
 }
