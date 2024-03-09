@@ -19,7 +19,7 @@ function FullBlog({ blog }: { blog: Blog }) {
           <div className="md:col-span-8">
             <div className="text-3xl md:text-5xl font-extrabold">{blog.title}</div>
             <div className="text-slate-500 pt-2">Post on 2nd December 2024</div>
-            <div className="pt-4">
+            <div className="pt-4" style={{ maxHeight: "400px", overflowY: "auto" }}>
               {/* Render content using <pre> element */}
               <pre>{blog.content}</pre>
             </div>
