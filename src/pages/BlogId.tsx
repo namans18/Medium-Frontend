@@ -1,5 +1,4 @@
 import FullBlog from "../components/FullBlog";
-import Footer from "../components/footer";
 import Skeleton from "../components/skeleton";
 import useBlog from "../hooks/getBlog";
 import { useParams } from "react-router-dom";
